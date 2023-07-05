@@ -1,0 +1,77 @@
+/* Define a imagem de fundo sem blur */
+body {
+    font-family: "Poppins", sans-serif; /* Define a fonte Poppins para o corpo do site */
+    background-image: url("https://img.freepik.com/fotos-gratis/fundo-de-papel-de-parede-colorido-desfocado-vivido_58702-3798.jpg?t=st=1688400031~exp=1688400631~hmac=e288c7856a56ebe8308e2740cec93727da948c51317532975eb91334bfccbfa3");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 95vh; /* Centraliza verticalmente o conteúdo */
+  }
+  
+  /* Estilização do container principal */
+  .container {
+    max-width: auto; 
+    margin: 300px;
+    padding: 30px; 
+    background-color: rgba(255, 255, 255, 0.3); /* Cor com transparência para criar o efeito de glassmorphism */
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra para dar destaque ao formulário */
+  }
+  
+  /* Estilização do título */
+  .title {
+    text-align: center;
+    color: #000; 
+    font-size: 35px; 
+  }
+  
+  /* Estilização do formulário */
+  #input-form {
+    display: grid;
+    grid-gap: 5px;
+  }
+  
+  label {
+    color: #333; /* Altera a cor do texto dos labels */
+  }
+  
+  input {
+    width: auto;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.7); /* Cor com transparência para o efeito de glassmorphism */
+    backdrop-filter: blur(5px); /* Define o blur do fundo do formulário */
+    color: #333; /* Altera a cor do texto dos inputs */
+  }
+  
+  button {
+    width: auto;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  /* Estilização da saída dos resultados */
+  #output {
+    margin-top: 20px;
+    color: #333; /* Altera a cor do texto dos resultados */
+  }
+  
+  /* Estilização do botão de voltar */
+  #voltar {
+    margin-top: 20px;
+    width: 600px;
+    display: none;
+    padding: auto;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+  }
+  

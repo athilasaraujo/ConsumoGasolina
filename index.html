@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- Inclui o arquivo CSS para estilização -->
+  <link rel="stylesheet" href="styles.css">
+  <!-- Inclui o arquivo JavaScript para funcionalidades interativas -->
+  <script src="script.js" defer></script>
+  <title>Álcool ou Gasolina?</title>
+</head>
+<body>
+  <div class="container">
+    <!-- Título da página -->
+    <h3 class="title">Álcool ou Gasolina?</h3>
+    <!-- Formulário de entrada com campos para preencher os dados -->
+    <div id="input-form">
+      <label for="tanque">Quantos litros tem o tanque do seu carro?</label>
+      <input type="number" id="tanque" placeholder="Exemplo: 40" required>
+      <label for="gasolinaKm">Quantos Km seu carro percorre com o tanque completo de gasolina?</label>
+      <input type="number" id="gasolinaKm" placeholder="Exemplo: 480" required>
+      <label for="precoGasolina">Qual o valor da gasolina na sua cidade?</label>
+      <input type="number" id="precoGasolina" placeholder="Exemplo: 6.596" required>
+      <label for="alcoolKm">Quantos Km seu carro percorre com o tanque completo de etanol?</label>
+      <input type="number" id="alcoolKm" placeholder="Exemplo: 300" required>
+      <label for="precoAlcool">Qual o valor do etanol na sua cidade?</label>
+      <input type="number" id="precoAlcool" placeholder="Exemplo: 5.051" required>
+      <!-- Botão para acionar o cálculo -->
+      <button id="calcular">Calcular</button>
+    </div>
+    <!-- Local onde serão exibidos os resultados -->
+    <div id="output"></div>
+    <!-- Botão para voltar à página inicial após calcular -->
+    <button id="voltar" style="display: none;">Voltar</button>
+  </div>
+</body>
+</html>
